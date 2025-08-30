@@ -19,6 +19,9 @@ venv/
 dist/
 build/
 site/
+bin/
+lib/
+rag-anything/
 
 # Logs / Reports
 *.log
