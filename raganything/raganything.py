@@ -280,6 +280,10 @@ class RAGAnything(QueryMixin, ProcessorMixin, BatchMixin):
             "working_dir": self.working_dir,
             "llm_model_func": self.llm_model_func,
             "embedding_func": self.embedding_func,
+            "kv_storage": "PGKVStorage",
+            "graph_storage": "PGGraphStorage",
+            "vector_storage": "PGVectorStorage",
+            "doc_status_storage": "PGDocStatusStorage",
         }
 
         # Merge user-provided lightrag_kwargs, which can override defaults
